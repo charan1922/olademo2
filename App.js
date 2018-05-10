@@ -7,7 +7,8 @@
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View ,TouchableOpacity} from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import MapItem from "./components/MapItem.js";
+import MapItem from "./app/components/MapItem";
+
 export default class App extends Component {
   render() {
     return (

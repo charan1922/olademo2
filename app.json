@@ -1,5 +1,22 @@
+
+
 {
-  "expo": {
-    "sdkVersion": "27.0.0"
-  }
-}
+   "expo": {
+    "name": "olademo",
+    "icon": "./assets/icon.png",
+    "version": "1.0.0",
+    "slug": "ola-demo",
+    "sdkVersion": "27.0.0",
+    "ios": {
+      "bundleIdentifier": "com.olademo.olademo"
+    },
+    "android": {
+      "package": "com.olademo.olademo",
+      "config": {
+      "googleMaps": { "apiKey": " AIzaSyDidWQkROUr7U_eNNwJB7dT56OEgE9TgwI" }   
+   }
+    }
+   }
+ }
+
+
