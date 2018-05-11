@@ -4,16 +4,18 @@ import {
   StyleSheet,
   Text,
   View,
-  TouchableOpacity
+  TouchableOpacity,
+  Image
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import RideFeatures from "./RideFeatures";
 import IconText from "./IconText";
 import RideButton from "./RideButton";
+import moduleName from '../../assets/ola_rental.png'
 
 export default class Footer extends Component {
   render() {
-const {newFeature , newFeatureTextStyle , cabIcon, cabIconText , rentInfo , rentInfoText , tabContainer} = styles;
+    const { newFeature, newFeatureTextStyle, cabIcon, cabIconText, rentInfo, rentInfoText, tabContainer } = styles;
 
     return (
       <View>
@@ -24,7 +26,7 @@ const {newFeature , newFeatureTextStyle , cabIcon, cabIconText , rentInfo , rent
         </View>
 
         <View style={cabIcon}>
-          <Icon name="subway" size={30} />
+          <Image source={require('../../assets/ola_rental.png')} style={{ width: 32, height: 32, marginVertical: 5 }} />
           <Text style={cabIconText}>6 min away</Text>
         </View>
 
@@ -32,11 +34,13 @@ const {newFeature , newFeatureTextStyle , cabIcon, cabIconText , rentInfo , rent
           <Text style={rentInfoText}>
             Rent a cab at flexible hourly packages
           </Text>
-          <Icon name="info" style={{ marginLeft: 10 }} size={15} />
+          <Icon name="info" style={{ marginLeft: 3 }} size={15} color="#87ceeb" />
+          {/* <Image source={require('../../assets/info.png')} style={{ width: 14, height: 14, marginLeft:3}} /> */}
+
         </View>
 
         <RideFeatures>
-          <IconText icon="timer" title="Hourly Packages" />
+          <IconText icon="redeem" title="Hourly Packages" />
           <IconText icon="timeline" title="Multiple Stops" />
           <IconText icon="timer" title="Always Available" />
         </RideFeatures>
@@ -62,12 +66,12 @@ const styles = StyleSheet.create({
   //Ac cabs now
   newFeature: {
     backgroundColor: "#D4DB2B",
-    height: 30,
+    height: 25,
     alignItems: "center",
     justifyContent: "center"
   },
   newFeatureTextStyle: {
-    fontSize: 10,
+    fontSize: 9,
     fontWeight: "400"
   },
 
@@ -81,15 +85,15 @@ const styles = StyleSheet.create({
   },
   rentInfoText: {
     fontSize: 10,
-    fontWeight: "600"
+    fontWeight: "400"
   },
 
   //cab Icon
   cabIcon: {
     backgroundColor: "#FFFFFF",
-    height: 50,
+    height: 55,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
   },
-  cabIconText: { fontSize: 8, fontWeight: "500" }
+  cabIconText: { fontSize: 8, fontWeight: "400" }
 });

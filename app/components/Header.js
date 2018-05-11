@@ -68,10 +68,10 @@ const styles = StyleSheet.create({
     fontWeight: "400"
   },
   rentalsStyle: {
-    borderRadius: 30,
+    borderRadius: 50,
+    borderWidth:0.5,
     borderColor: "#E5E5E5",
     backgroundColor: "#DCE147",
-    paddingVertical: 7,
-    paddingHorizontal: 10
+    padding: 7,
   }
 });
