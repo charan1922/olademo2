@@ -13,9 +13,4 @@
 ## :arrow_forward: How to Run App
 
 1. cd to the repo
-2. Run Build for either OS
-  * for iOS
-    * run `yarn start`
-  * for Android
-    * Run Genymotion
-    * run `yarn start`
+2. run `yarn start`
