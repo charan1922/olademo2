@@ -47,7 +47,7 @@ export default class MapItem extends React.Component {
             <MapView.Marker
               key={marker.id}
               coordinate={coords}
-              title={marker.stationName}
+              title={marker.title}
               description={marker.description}
             />
           );
