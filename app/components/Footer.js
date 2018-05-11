@@ -13,29 +13,23 @@ import RideButton from "./RideButton";
 
 export default class Footer extends Component {
   render() {
-    const {
-      rideTextStyle,
-      container,
-      rentalsStyle,
-      rideTypes,
-      rentalsTextStyle
-    } = styles;
+const {newFeature , newFeatureTextStyle , cabIcon, cabIconText , rentInfo , rentInfoText , tabContainer} = styles;
 
     return (
       <View>
-        <View style={styles.newFeature}>
-          <Text style={styles.newFeatureTextStyle}>
+        <View style={newFeature}>
+          <Text style={newFeatureTextStyle}>
             AC cabs now available at hourly packages
           </Text>
         </View>
 
-        <View style={styles.cabIcon}>
+        <View style={cabIcon}>
           <Icon name="subway" size={30} />
-          <Text style={styles.cabIconText}>6 min away</Text>
+          <Text style={cabIconText}>6 min away</Text>
         </View>
 
-        <View style={styles.rentInfo}>
-          <Text style={styles.rentInfoText}>
+        <View style={rentInfo}>
+          <Text style={rentInfoText}>
             Rent a cab at flexible hourly packages
           </Text>
           <Icon name="info" style={{ marginLeft: 10 }} size={15} />
@@ -47,7 +41,7 @@ export default class Footer extends Component {
           <IconText icon="timer" title="Always Available" />
         </RideFeatures>
 
-        <View style={styles.tabBar}>
+        <View style={tabContainer}>
           <RideButton text="RIDE NOW" />
           <View style={{ borderColor: "#565454", borderWidth: 0.5 }} />
           <RideButton text="RIDE LATER" />
@@ -58,7 +52,7 @@ export default class Footer extends Component {
 }
 
 const styles = StyleSheet.create({
-  tabBar: {
+  tabContainer: {
     backgroundColor: "#202020",
     height: 50,
     flexDirection: "row",

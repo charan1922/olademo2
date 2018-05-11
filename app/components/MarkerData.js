@@ -1,4 +1,4 @@
-export const MarkerList = [
+export const markerData = [
   {
     id: 1,
     title: "Pickup from",

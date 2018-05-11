@@ -2,21 +2,21 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { MapView } from "expo";
 import { Marker } from "react-native-maps";
-import { MarkerList } from "./MarkerData";
+import { markerData } from "./MarkerData";
 export default class MapItem extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
       isLoading: true,
-      markers: []
+      markerData: []
     };
   }
 
   fetchMarkerData = () => {
     this.setState({
       isLoading: false,
-      markers: MarkerList
+      markerData
     });
   };
 
@@ -25,6 +25,14 @@ export default class MapItem extends React.Component {
   }
 
   render() {
+    if (this.state.isLoading) {
+      return (
+        <View>
+          <Text>Loading</Text>
+        </View>
+      );
+    }
+
     return (
       <MapView
         style={{
@@ -37,12 +45,14 @@ export default class MapItem extends React.Component {
           longitudeDelta: 0.012
         }}
       >
-        {this.state.markers.map(marker => {
+        {this.state.markerData.map(marker => {
           const coords = {
             latitude: marker.latitude,
             longitude: marker.longitude
           };
 
+
+          
           return (
             <MapView.Marker
               key={marker.id}
