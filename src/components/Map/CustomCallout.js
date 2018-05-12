@@ -7,13 +7,16 @@ import {
   Image
 } from 'react-native';
 
+import { GREEN , WHITE  } from '../../utils/colors.js';
+
+
 import Icon from "react-native-vector-icons/MaterialIcons";
 export default CustomCallout = ({ title, description }) => {
   return (
     <View style={styles.container}>
       <View style={styles.bubble}>
         <View style={styles.wrapper}>
-          <View style={{ backgroundColor: "green", height: 5, width: 5, borderRadius: 50, }} />
+          <View style={{ backgroundColor: GREEN, height: 5, width: 5, borderRadius: 50, }} />
         </View>
         <View styles={{ flex: 1, }}>
           <Text style={styles.title}>{title}</Text>
@@ -40,7 +43,7 @@ const styles = StyleSheet.create({
   bubble: {
     flexDirection: 'row',
     justifyContent: "space-around",
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
     paddingVertical: 8,
     borderRadius: 6,
   },
@@ -49,7 +52,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     borderWidth: 16,
     borderColor: 'transparent',
-    borderTopColor: '#FFFFFF',
+    borderTopColor: WHITE,
     alignSelf: 'center',
     marginTop: -32,
   },

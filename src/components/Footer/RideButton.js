@@ -6,7 +6,7 @@ import {
   View,
   TouchableOpacity
 } from "react-native";
-
+import { LIGHT_GREEN   } from '../../utils/colors.js';
 
 
 const RideButton = ({ text }) => {
@@ -26,6 +26,6 @@ const styles = StyleSheet.create({
   },
   Title: {
     fontSize: 11,
-    color: "#C2CE44"
+    color: LIGHT_GREEN
   }
 });

@@ -1,5 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
+import { WHITE   } from '../../utils/colors.js';
 
 const RideFeatures = (props) => {
   return (
@@ -11,7 +12,7 @@ const RideFeatures = (props) => {
 
 const styles = StyleSheet.create({
   containerStyle: {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: WHITE,
     height: 45,
     flexDirection: "row",
     justifyContent: "space-around",

@@ -8,6 +8,8 @@ import {
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 
+import { LIGHT_GREEN , WHITE , LIGHT_GREY  } from '../../utils/colors.js';
+
 export default class Header extends Component {
   render() {
     const {
@@ -44,7 +46,7 @@ export default class Header extends Component {
 const styles = StyleSheet.create({
   container: {
     height: 50,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: WHITE,
     elevation: 3,
     flexDirection: "row",
     alignItems: "center",
@@ -70,8 +72,8 @@ const styles = StyleSheet.create({
   rentalsStyle: {
     borderRadius: 50,
     borderWidth:0.5,
-    borderColor: "#E5E5E5",
-    backgroundColor: "#DCE147",
+    borderColor: LIGHT_GREY,
+    backgroundColor: LIGHT_GREEN,
     padding: 7,
   }
 });
