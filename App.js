@@ -13,17 +13,16 @@ import {
   TouchableOpacity
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import MapItem from "./app/components/MapItem";
-import Header from "./app/components/Header";
-import Footer from "./app/components/Footer";
-
+import Map from "./src/components/Map";
+import Footer from "./src/components/Footer";
+import Header from "./src/components/Header";
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Header />
         <View style={styles.body}>
-          <MapItem />
+          <Map/>
         </View>
         <Footer />
       </View>

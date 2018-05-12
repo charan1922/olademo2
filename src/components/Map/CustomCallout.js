@@ -20,7 +20,7 @@ export default CustomCallout = ({ title, description }) => {
           <Text style={styles.desc} numberOfLines={1}>{description}</Text>
         </View>
         <View style={styles.wrapper}>
-          <Image source={require('../../assets/fav.png')} style={{ height: 16, width: 16, }} />
+          <Image source={require('../../images/fav.png')} style={{ height: 16, width: 16, }} />
         </View>
       </View>
       <View style={styles.arrowBorder} />

@@ -8,10 +8,9 @@ import {
   Image
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import RideFeatures from "./RideFeatures";
-import IconText from "./IconText";
-import RideButton from "./RideButton";
-import moduleName from '../../assets/ola_rental.png'
+import RideFeatures from "./RideFeatures.js";
+import IconText from "./IconText.js";
+import RideButton from "./RideButton.js";
 
 export default class Footer extends Component {
   render() {
@@ -26,7 +25,7 @@ export default class Footer extends Component {
         </View>
 
         <View style={cabIcon}>
-          <Image source={require('../../assets/ola_rental.png')} style={{ width: 32, height: 32, marginVertical: 5 }} />
+          <Image source={require('../../images/ola_rental.png')} style={{ width: 32, height: 32, marginVertical: 5 }} />
           <Text style={cabIconText}>6 min away</Text>
         </View>
 
@@ -35,7 +34,6 @@ export default class Footer extends Component {
             Rent a cab at flexible hourly packages
           </Text>
           <Icon name="info" style={{ marginLeft: 3 }} size={15} color="#87ceeb" />
-          {/* <Image source={require('../../assets/info.png')} style={{ width: 14, height: 14, marginLeft:3}} /> */}
 
         </View>
 

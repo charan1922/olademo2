@@ -19,12 +19,7 @@ const RideButton = ({ text }) => {
 export default RideButton;
 
 const styles = StyleSheet.create({
-  containerStyle: {
-    backgroundColor: "#202020",
-    height: 50,
-    flexDirection: "row",
-    justifyContent: "space-evenly"
-  },
+
   Item: {
     alignItems: "center",
     justifyContent: "center"
