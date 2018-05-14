@@ -10,7 +10,6 @@ import {
 import { GREEN , WHITE , TEXT_GREY } from '../../utils/colors.js';
 
 
-import Icon from "react-native-vector-icons/MaterialIcons";
 export default CustomCallout = ({ title, description }) => {
   return (
     <View style={styles.container}>
@@ -28,7 +27,6 @@ export default CustomCallout = ({ title, description }) => {
       </View>
       <View style={styles.arrowBorder} />
       <View style={styles.arrow} />
-      {/* <Text>HI</Text> */}
     </View>
   );
 }

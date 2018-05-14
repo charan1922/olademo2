@@ -43,7 +43,7 @@ export default class Header extends Component {
           <View>
             <Icon name="notifications" size={25} color={GREY} />
             <View style={badge}>
-              <Text style={{fontSize:8,color:WHITE}}>2</Text>
+              <Text style={{fontSize:7,color:WHITE}}>2</Text>
             </View>
           </View>
         </TouchableOpacity>
