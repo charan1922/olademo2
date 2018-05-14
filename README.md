@@ -14,3 +14,8 @@
 
 1. cd to the repo
 2. run `yarn start`
+
+
+## : How t0 Run App using EXPO
+
+open [https://expo.io/@charan1922/ola-demo](https://expo.io/@charan1922/ola-demo) 
