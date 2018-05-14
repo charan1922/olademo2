@@ -7,7 +7,7 @@ import {
   Image
 } from 'react-native';
 
-import { GREEN , WHITE  } from '../../utils/colors.js';
+import { GREEN , WHITE , TEXT_GREY } from '../../utils/colors.js';
 
 
 import Icon from "react-native-vector-icons/MaterialIcons";
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 8,
     fontWeight: '200',
-    color: "#565252"
+    color: TEXT_GREY
   },
   desc: {
     fontSize: 10,
