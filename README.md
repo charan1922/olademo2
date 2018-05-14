@@ -16,6 +16,6 @@
 2. run `yarn start`
 
 
-## : How t0 Run App using EXPO
+## :arrow_forward: How to Run App using EXPO
 
 open [https://expo.io/@charan1922/ola-demo](https://expo.io/@charan1922/ola-demo) 
